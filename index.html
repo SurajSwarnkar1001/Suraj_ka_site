@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal portfolio website </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/818a462558.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+
+                <img src="images/logo.png" class="logo">
+                <!--logo change karna haa -->
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">services</a></li>
+                    <li><a href="#portfolio">portfolio</a></li>
+                    <li><a href="#contant">contact</a></li>
+                    <!-- <i class="fa-solid fa-circle-xmark"></i> -->
+                    <i class="fa-sharp fa-solid fa-xmark" onclick="closemenu()"></i> <!-- cross -->
+                    <!-- times logo -->
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i> <!--  menu -->
+            </nav>
+            <div class="header-text">
+                <p>Web/App Designer</p>
+                <h1>Hi, I'm <span>Suraj</span> <br> swarnkar from CODINGDUNIA</h1>
+            </div>
+        </div>
+    </div>
+    <!----------------- start about ------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/suraj.jpg" alt="">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                   <br> <p>Hi,I am suraj swarnkar I am from musaboni,Jharkhand about my educational qualifications,I have
+                        done my schooling in Saraswati Shishu vidya mandir,Musaboni.And I have done my intermediate from
+                        Musaboni mines intercollage,Musaboni.Now Currently, I am pursuing B.Tech In the branch Computer
+                        Science from RVSCET,Jamshedpur.
+
+                        Also, I have knowledge about Data structure, Html, CSS, C, and C++.
+
+                        I made many projects on Html, and CSS in which I will work on the front end.
+
+                        Now talking about my strength - I am goal oriented person and I always try to find a creative
+                        solution of problems within the time limit.
+
+                        Now talking about my hobby - I like travelling.
+
+                        That's all about myself.</p>   <br>
+
+                    <div class="tab-title">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('Experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('Education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span><br>Web page design</li>
+                            <li><span>Game Development</span><br>Using the Unity Game-Engine</li>
+                            <!-- <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/IOS apps</li> -->
+                    </div>
+
+                    <div class="tab-contents" id="Experience">
+                        <ul>
+                            <li><span>Game Design</span><br>I worked 1 year with Unity Collaborate</li>
+                            <li><span>Web Design</span><br>3 year experience in the field of web design using Html,CSS,JavaScript</li>
+                            <li><span>Sketching</span><br>1 Year experience </li>
+                            <!-- <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/IOS apps</li> -->
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Education">
+                        <ul>
+                            <li><span>Schooling</span><br>Saraswati Shishu vidya Mandir in 2019</li>
+                            <!--  <li><span>Web Development</span><br>Web App Development</li>
+                            <li><span>App Development</span><br>Building Android/IOS apps</li> -->
+                             <li><span>Entermediate</span><br>Musaboni Mines Inter Collage i 2021</li>
+                            <li><span>Graducation</span><br>RVSCET,Jamshedpur in 2021-2025</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------------------services start------------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title"> My services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Web design encompasses many different skills and disciplines in the production and maintenance of websites. The different areas of web design include web graphic design; user interface design; authoring, including standardised code and proprietary software; user experience design; and search engine optimization.</p>
+                    <a href="https://en.wikipedia.org/wiki/Web_design">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2> Game Design</h2>
+                    <p>Game design is the art of applying design and aesthetics to create a game for entertainment or for educational, exercise, or experimental purposes. Increasingly, elements and principles of game design are also applied to other interactions, in the form of gamification.</p>
+                    <a href="https://en.wikipedia.org/wiki/Game_design">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>App design combines the user interface (UI) and user experience (UX). While UI lends itself to the overall style of the app (including the colors, fonts, and general look and feel), UX focuses on the actual functionality and usability. A large number of users abandon an app after using it for the first time.</p>
+                    <a href="https://en.wikipedia.org/wiki/Mobile_app_development">Learn more</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- ------------------portfolio start----------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>Social media is a collective term for websites and applications that focus on communication, community-based input, interaction, content-sharing and collaboration. People use social media to stay in touch and interact with friends, family and various communities.
+                        </p>
+                        <a href="https://en.wikipedia.org/wiki/Social_media"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Music App</h3>
+                        <p>Apple Music is a music, audio and video streaming service developed by Apple Inc. Users select music to stream to their device on-demand, or they can listen to existing playlists. 
+                        </p>
+                        <a href="https://en.wikipedia.org/wiki/Apple_Music"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Online soapping App</h3>
+                        <p>Online shopping is a form of electronic commerce which allows consumers to directly buy goods or services from a seller over the Internet using a web browser or a mobile app.
+                        </p>
+                        <a href="https://en.wikipedia.org/wiki/Online_shopping"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <a href="https://en.wikipedia.org/wiki/Information_technology" class="btn">See More Technology</a>
+        </div>
+    </div>
+    <!-- -----------------contact---------------- -->
+    <div id="contant">
+        <div class="container">
+            <div class="row">
+                <div class="contant-left">
+                    <h1 class="sub-title">Contant Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i> surajswarnkar1001@gmail.com</p>
+                    <!-- <p><i class="fa-solid fa-airplay"></i> 1234567890</p> -->
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100086333285923&sk=photos"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/SURAJSWARNKAR16"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://www.instagram.com/suraj_swarnkar10101?r=nametag"><i
+                                class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/suraj-swarnkar-596b3820b"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/SurajSwarnkar1001"><i class="fa-brands fa-github"></i></a>
+                    </div>
+                    <a href="images/Suraj_resume_1001.pdf" download class="btn btn2">Ddownload CV</a>
+                </div>
+                <div class="contant-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="Email" name="Email" placeholder="your Email" required>
+                        <textarea name="Message" rows="6" placeholder="your Message"></textarea>
+                        <button type="submit" class="btn btn2">submit</button>
+                    </form>
+                    <span id="msg">Click the submit buttom</span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Suraj. Made with <i class="fa-solid fa-heart"></i> by Suraj Swarnkar </p>
+        </div>
+    </div>
+
+
+    <!----------------------- java script ------------------>
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwXLkE90hwBKQpqzB7wy8QgE_Px1mWCBFEROqVWDQ3f_fQIlAZoxQnP40flGsqmM28/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
